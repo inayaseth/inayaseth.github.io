@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Libre+Baskerville&family=Quicksand&family=Raleway:wght@300&display=swap" rel="stylesheet">
 	<style type="text/css">
+			p{
+			font-family: 'Fredericka the Great', sans-serif;
+			font-size:80px;
+			color:lightgoldenrodyellow;
+			text-align: center;
+
+		}
+		.text{
+			font-family: 'Fredericka the Great', sans-serif;
+			font-size:30px;
+			z-index: 0;
+			color:lightcyan;
+			text-align: center;
+/*			background-color:red;*/
+			position:relative;
+			top:50%;
+		}
+			/*	p2{
+			font-family: 'Fredericka the Great', sans-serif;
+			font-size:30px;
+			z-index: 0;
+			position:absolute;
+			left:340px;
+			top: 400px;
+			color:lightcyan;
+			text-align: center;
+		}
+				p3{
+			font-family: 'Fredericka the Great', sans-serif;
+			font-size:30px;
+			z-index: 0;
+			position:absolute;
+			left:605px;
+			top: 420px;
+			color:lightcyan;
+			text-align: center;
+		}*/
+
+
+
 		#skis{
 			width:300px;
 			height:300px;
 			background-image:url(https://elanskis.com/media/catalog/product/cache/0b05020c511a768f77cb5aed427f9b88/e/l/elanskis-maxx_jrs-afdjnx22-a.png);
 			background-size:contain;
 			display: inline-block;
+			background-position:center;
 
 
 }
@@ -16,18 +60,20 @@
 		#poles{
 			width:200px;
 			height:300px;
-			background-image:url(https://i0.wp.com/www.whiskipoles.com/wp-content/uploads/2018/02/Green-Poles-Full-Transparent.png?fit=2500%2C4963&ssl=1);
+			background-image:url(poles.png);
 			background-size:contain;
 			background-repeat: no-repeat;
 						display: inline-block;
+						background-position:center;
 	}					
 		#skiier{
-			width:250px;
+			width:300px;
 			height:300px;
-			background-image:url(https://i.pinimg.com/originals/55/be/37/55be37543ef3fba1223f65589666a56d.png);
+			background-image:url(https://images.vexels.com/media/users/3/192370/isolated/preview/26f013440ddfc52cf4671bd59177442c-winter-girl-skiing-flat.png);
 			background-size:contain;
 			background-repeat: no-repeat;
 			display: inline-block;
+			background-position:center;
 
 }
 
@@ -38,17 +84,26 @@ body{
 
 </head>
 <body>
+<p> Welcome to Inaya's Website! </p>
 
+
+<center>
 	<a href="projects.html">
-	<div id="skis"></div>
+	<div id="skis">
+		<p class='text'>projects</p>
+
+	</div>
 	</a>
 
 	<a href="journal.html">
-	<div id="poles"></div>
+	<div id="poles"><p class='text'>journal</p>
+</div>
 	</a>
 
 	<a href="aboutme.html">
-	<div id="skiier"></div>
+	<div id="skiier"><p class='text'>about me</p>
+</div>
 	</a>
+</center>
 </body>
 </html>
