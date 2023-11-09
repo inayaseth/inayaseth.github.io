@@ -23,7 +23,9 @@
 
 
 <body>
-<p> COOKIES!! </p>		
+	<center>
+	<audio id="sound" src="cookie.mp3.mov"></audio>
+<p> COOKIES!! (click on the cookie to eat it) </p>		
 
 	<script type="text/javascript">
 		
@@ -36,13 +38,21 @@
 			cookie.style.backgroundImage="url(https://www.yummeetreats.com/cdn/shop/products/DSC02012copy_1200x.png?v=1637803158)";
 			cookie.style.display="inline-block";
 			cookie.style.backgroundRepeat="no-repeat";
+		
+
+		cookie.addEventListener("click", function(){
+		cookie.style.opacity="0"
+		sound.play()
+		})
+		
+
 		}
 
-			setInterval(makeCookie, 100)
+		setInterval(makeCookie, 100)
 
 			
 
 	</script>
-
+</center>
 </body>
 </html>
