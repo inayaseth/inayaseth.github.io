@@ -1,45 +1,354 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&display=swap" rel="stylesheet">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-	<style type="text/css">
+<style type="text/css">
+	p{
+			font-family: 'Quicksand', sans-serif;
+			font-size:100px;
+			color:darkorange;
+			background-color:saddlebrown;
+			position:relative;
+			z-index:2px;
+			top:100px;
+}
+#clickme{
+	z-index:10;
+	background-color:blue;
+	position:relative;
+	height:150px;
+	width:250px;
+	top:0px;
+	left:150px;
+	background-image:url(clickme.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
 
-		.box{
-			width:100px;
-			height:100px;
+#barbie{
+	position:relative;
+	height:400px;
+	width:400px;
+	left:0px;
+	position:absolute;
+	background-image:url(barbie.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;	
+	display:inline-block;
+}
+
+#bdaycake{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(bdaycake.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#butterfly{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(butterfly.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#cheesepull{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(cheesepull.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#knife{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(knife.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#vacay{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(vacay.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#xmas{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(xmas.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#climbing{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(climbing.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#costume{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(costume.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+#tattoo{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(tattoo.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#mohawk{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(mohawk.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#glasses{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(glasses.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#kitkat{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(kitkat.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#tunnel{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(tunnel.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#tourist{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(tourist.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#snap{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(snap.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#soccer{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(soccer.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+</style>
+
+</head>
+
+<body>
+<center>
+<p id="text"></p>
+<div id="clickme"></div>
+<div id="barbie"></div>
+<div id="bdaycake"></div>
+<div id="butterfly"></div>
+<div id="cheesepull"></div>
+<div id="knife"></div>
+<div id="vacay"></div>
+<div id="xmas"></div>
+<div id="climbing"></div>
+<div id="costume"></div>
+<div id="tattoo"></div>
+<div id="mohawk"></div>
+<div id="glasses"></div>
+<div id="kitkat"></div>
+<div id="tunnel"></div>
+<div id="tourist"></div>
+<div id="snap"></div>
+<div id="soccer"></div>
+
+
+</center>
+
+ <script type="text/javascript"> 
+	 var counter =0
+
+	clickme.addEventListener("click", function(){
+		console.log(counter)
+		counter =counter+1
+
+		if(counter==1){
+			barbie.style.opacity="1"
+		
+		}
+
+		if(counter==2){
+			bdaycake.style.opacity="1"
+		
+		}
+
+		if(counter==3){
+			butterfly.style.opacity="1"
+		
+		}
+
+		if(counter==4){
+			cheesepull.style.opacity="1"
+
+		}
+		if(counter==5){
+			knife.style.opacity="1"
+		
 		}
 		
-		p{
-			font-family: 'Quicksand', sans-serif;
-			font-size:45px;
-			color:brown;
-			background-color:orange;
-
+		if(counter==6){
+			vacay.style.opacity="1"
+		
 		}
-	</style>
-</head>
-<body>
-	<center>
-	<p>Click the screen to see different images! Happy Thanksgiving!</p>
 
-	<div class="box" id="box1"></div>
+		if(counter==7){
+			xmas.style.opacity="1"
+		
+		}
 
-<script type="text/javascript">
+		if(counter==8){
+			climbing.style.opacity="1"
+		
+		}
 
-	document.addEventListener("click", function(){
-	box.style.backgroundImage="url(barbie.PNG)";
-	
-})
-</script>
-</center>
+		if(counter==9){
+			costume.style.opacity="1"
+		
+		}
+
+		if(counter==10){
+			tattoo.style.opacity="1"
+		
+		}
+
+		if(counter==12){
+			mohawk.style.opacity="1"
+		
+		}
+
+		if(counter==13){
+			glasses.style.opacity="1"
+		
+		}
+
+		if(counter==14){
+			kitkat.style.opacity="1"
+		
+		}
+		
+		if(counter==15){
+			tunnel.style.opacity="1"
+		}
+
+		if(counter==16){
+			tourist.style.opacity="1"
+		
+		}
+		
+		if(counter==17){
+			snap.style.opacity="1"
+		
+		}
+
+		if(counter==18){
+			soccer.style.opacity="1"
+		
+				
+		}
+
+		if(counter==19){
+			text.innerText = "HAPPY THANKSGIVING!"
+		}
+
+
+	})
+		
+	</script>
 </body>
-
 </html>
