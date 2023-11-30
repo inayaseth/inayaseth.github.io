@@ -17,7 +17,10 @@
 	</style>	
 </head>
 <body>
+	<audio id="sound" src="cookie.mp3.mov"></audio>
+
 	<center><p>How many slices of pizza does the average American consume in their life?</p></center>
+
 
 <script type="text/javascript">
 	function makePizza(input){
@@ -25,6 +28,13 @@
 		document.body.appendChild(pizza);
 		pizza.classList.add("pizza");
 		pizza.innerText = input
+	
+
+	pizza.addEventListener("click", function(){
+		pizza.style.opacity="0"
+		sound.play()
+		})
+
 	}
 
 	for (var counter =0; counter<6001; counter=counter+1){
