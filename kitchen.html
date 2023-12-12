@@ -9,7 +9,6 @@
 			display:inline-block;
 			background-size:contain;
 			background-position: center;
-			background-color:lightcoral;
 		}
 
 		#cookie{
@@ -21,7 +20,7 @@
 		}
 
 		#sprinkles{
-		background-image:url(https://snackdata.com/images/sprinkles.gif);
+		background-image:url(sprinkles.png);
 	}
 
 		#chocchips{
@@ -68,11 +67,22 @@
 		})
 
 		marshmallows.addEventListener("click", function(){
-		topping = "marshmallows"
+		topping = "https://134826459.cdn6.editmysite.com/uploads/1/3/4/8/134826459/s275388474272596307_p88_i1_w10000.png?width=2400&optimize=medium"
 		console.log(topping)
 		})
 
-		cookie.addEventListener.("click", makeTopping)
+		cookie.addEventListener("click",
+			function makeDiv (event) {
+			var cookietopping = document.createElement('div');
+			document.body.appendChild(cookietopping)
+			cookietopping.classList.add('topping')
+			cookietopping.style.position = "absolute"
+			cookietopping.style.left = event.clientX-50 +"px"
+			cookietopping.style.top = event.clientY-50 +"px"
+			cookietopping.style.border = "0px"
+			cookietopping.style.backgroundImage = "url("+ topping +".png)"
+
+		})
 
 	</script>
 
