@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<style>
+.ornament{
+width:150px;
+height:150px;
+display:inline-block;
+background-size:contain;
+background-position: center;
+}
+#tree{
+width:500px;
+height:500px;
+background-color:palevioletred;
+background-size:contain;
+background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdCOFSIaf2RVsPuDmvdtc11-5CgrUfSS11wA&usqp=CAU);
+background-repeat:no-repeat;
+}
+#image1{
+background-image:url(tara2.png);
+}
+
+#image2{
+background-image:url(nick2.png);
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="image1" class="ornament"></div>
+<div id="image2" class="ornament"></div>
+<div id="image3" class="ornament"></div>
+<div id="tree"></div>
+
+<script type="text/javascript">
+var ornament;
+
+function makeTopping (){
+var whatever = document.createElement("div");
+tree.body.appendChild(whatever);
+whatever.classList.add("topping");
+whatever.innerText = topping
+
+
+}
+
+image1.addEventListener("click", function(){
+ornament = "tara2"
+console.log(ornament)
+})
+
+image2.addEventListener("click", function(){
+ornament = "nick2"
+console.log(ornament)
+})
+
+console.log(ornament)
+
+
+tree.addEventListener("click",
+function makeDiv (event) {
+var treeornament = document.createElement('div');
+document.body.appendChild(treeornament)
+treeornament.classList.add('ornament')
+treeornament.style.position = "absolute"
+treeornament.style.left = event.clientX +"px"
+treeornament.style.top = event.clientY +"px"
+treeornament.style.border = "0px"
+treeornament.style.backgroundImage = "url("+ ornament +".png)"
+
+})
+
+</script>
+
+</body>
+
+</html>

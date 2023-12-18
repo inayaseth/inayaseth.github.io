@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+<style type="text/css">
+	p{
+			font-family: 'Quicksand', sans-serif;
+			font-size:90px;
+			color:skyblue;
+			background-color:palevioletred;
+			position:relative;
+			z-index:2px;
+			top:100px;
+}
+#clickme{
+	z-index:10;
+	position:relative;
+	height:150px;
+	width:250px;
+	top:-250px;
+	left:30px;
+	background-image:url(clickme.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#pl{
+	position:relative;
+	height:450px;
+	width:450px;
+	left:0px;
+	position:absolute;
+	background-image:url(pl.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;	
+	display:inline-block;
+}
+
+#cafe{
+	position:relative;
+	height:400px;
+	width:600px;
+	background-image:url(cafe.PNG);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#pizzapl{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(pizzapl.PNG);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#nick{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(nick.jpg);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#playlist{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(playlist.PNG);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#tara{
+	position:relative;
+	height:400px;
+	width:400px;
+	
+	background-image:url(tara.PNG);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#xc{
+	position:relative;
+	height:400px;
+	width:400px;
+	
+	background-image:url(xc.PNG);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+body{
+			background-color:skyblue;
+		}
+
+</style>
+
+</head>
+
+<body>
+<center>
+<p id="text"></p>
+<div id="clickme"></div>
+<div id="pl"></div>
+<div id="cafe"></div>
+<div id="xc"></div>
+<div id="playlist"></div>
+<div id="tara"></div>
+<div id="nick"></div>
+
+<audio id="song" src="theman.mp4"></audio>
+
+</center>
+
+ <script type="text/javascript"> 
+	 var counter =0
+
+	clickme.addEventListener("click", function(){
+		console.log(counter)
+		counter =counter+1
+
+		if(counter==1){
+			pl.style.opacity="1"
+		
+		}
+
+
+		if(counter==2){
+			cafe.style.opacity="1"
+		
+		}
+
+		if(counter==3){
+			xc.style.opacity="1"
+
+		}
+		if(counter==4){
+			playlist.style.opacity="1"
+		
+		}
+
+		if(counter==5){
+			tara.style.opacity="1"
+		
+		}
+
+		if(counter==6){
+			nick.style.opacity="1"
+		
+		}
+
+		if(counter==7){
+			text.innerText = "Happy Holidays Tara & Nick!"
+		}
+
+
+	})
+
+	document.addEventListener("click", function(){
+		song.play();
+	})
+		
+	</script>
+</body>
+</html>
