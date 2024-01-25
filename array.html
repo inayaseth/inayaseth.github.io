@@ -12,26 +12,162 @@ body{
 
 p{
 			font-family: 'Quicksand', sans-serif;
-			font-size:25px;
-			color:navy;
-			background-color:lightgray;
-
+			font-size:50px;
+			color:lightblue;
+			background-color:hotpink;
 		}
+
+#ski{
+	z-index:10;
+	position:relative;
+	height:500px;
+	width:250px;
+	top:-250px;
+	left:30px;
+	background-image:url(ski.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#iceskate{
+	position:relative;
+	height:450px;
+	width:450px;
+	left:0px;
+	position:absolute;
+	background-image:url(iceskate.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;	
+	display:inline-block;
+}
+
+#beach{
+	position:relative;
+	height:400px;
+	width:600px;
+	background-image:url(beach.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#movie{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(movie.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
+#run{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(run.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#read{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(read.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#cook{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(cook.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#sleep{
+	position:relative;
+	height:400px;
+	width:400px;
+	background-image:url(sleep.png);
+	opacity:0;
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+
+}
+
+#text{
+	height:500px;
+	width:500px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	font-size:50px;
+	color:hotpink;
+	display:inline-block;
+/*	border:1px solid black;*/
+
+}
+
+#picture{
+	position:relative;
+	height:500px;
+	width:500px;
+/*	border:1px solid black;*/
+	background-size:contain;
+	background-repeat:no-repeat;
+	display:inline-block;
+}
+
 
 </style>
 
 </head>
 <body>
-<p>What should you do this winter?</p>
+<p>What should you do today?</p>
+
+<div id="picture"></div>
+
+
+<div id="text"></div>
 
 <script type="text/javascript">
-	var things = ["hot chocolate", "snowman", "snowflake", "polar bear", "fireplace", "gloves", "candy cane", "sledding", "ice skating"]
 
-	var x = Math.round(Math.random()*5);
 
-	console.log(x)
+	 var pics = ["url(ski.png)", "url(iceskate.png)", "url(beach.png)", "url(movie.png)", "url(run.png)", "url(read.png)", "url(cook.png)", "url(sleep.png)"]
 
-	console.log(things[x])	
+	var things = ["you should ski!", "go ice skating!", "go to the beach!", "watch a movie!", "go for a run!", "read a book!", "make something yummy!", "get some sleep!"]
+
+	var randomNumber;
+
+
+
+	document.addEventListener("click", function(){
+		randomNumber = Math.round(Math.random()*7);
+		text.innerText = things[randomNumber]
+			picture.style.backgroundImage = pics[randomNumber]
+
+		console.log(randomNumber)
+
+	})
+
+
 
 </script>
 
