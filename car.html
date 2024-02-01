@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		body{
+			background-color:lightyellow;
+		}
+		
+		p{
+			font-family: 'Raleway', sans-serif;
+			font-size:50px;
+			color:lightyellow;
+			background-color:lightblue;
+		}
+		#car{
+			width:200px;
+			height:200px;
+			background-image:url(car.png);
+			background-size:contain;
+			position:relative;
+			background-repeat:no-repeat;			
+			left:0px;
+		}
+
+
+		#racetrack{
+			width:1500px;
+			height:1500px;
+			background-image:url(racetrack.png);
+			background-size:contain;
+			position:relative;
+			background-repeat:no-repeat;			
+			left:0px;
+		}
+
+
+	</style>
+
+
+
+</head>
+<body>
+
+<p>Click the arrows to move the car - try to get around the whole track!</p>
+
+<div id="racetrack"></div>
+<div id="car"></div>
+
+<script type="text/javascript">
+	var x = 0
+	var y = 0
+
+	document.addEventListener("keydown", function(event){
+		console.log(event)
+
+if (event.key=="ArrowRight")
+{x=x+10
+	car.style.backgroundImage="url(car.png)";
+	car.style.left = x +'px';
+	}
+
+if (event.key=="ArrowUp")
+{y=y-10
+	car.style.top = y +'px';
+	}
+
+
+if (event.key=="ArrowLeft")
+{x=x-10
+	car.style.backgroundImage="url(car2.png)";
+	car.style.left = x +'px';
+	}
+
+if (event.key=="ArrowDown")
+{y=y+10
+	car.style.top = y+'px';
+	}
+})
+
+</script>
+
+</body>
+</html>
