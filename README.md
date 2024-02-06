@@ -1,1 +1,1 @@
-# inayaseth.github.io
+# inaya.github.io
