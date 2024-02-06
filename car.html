@@ -19,24 +19,25 @@
 			background-color:lightblue;
 		}
 		#car{
-			width:200px;
-			height:200px;
+			width:100px;
+			height:100px;
+			position:absolute;
 			background-image:url(car.png);
 			background-size:contain;
-			position:relative;
 			background-repeat:no-repeat;			
-			left:0px;
+			z-index:10;
+			top:210px;
 		}
 
 
-		#racetrack{
-			width:1500px;
-			height:1500px;
-			background-image:url(racetrack.png);
+		#maze{
+			width:2000px;
+			height:2000px;
+			background-image:url(maze.png);
 			background-size:contain;
 			position:relative;
 			background-repeat:no-repeat;			
-			left:0px;
+			z-index:0;
 		}
 
 
@@ -47,9 +48,9 @@
 </head>
 <body>
 
-<p>Click the arrows to move the car - try to get around the whole track!</p>
+<p>Click the arrows to move the car! Try to get to the center of the maze.</p>
 
-<div id="racetrack"></div>
+<div id="maze"></div>
 <div id="car"></div>
 
 <script type="text/javascript">
@@ -63,6 +64,7 @@ if (event.key=="ArrowRight")
 {x=x+10
 	car.style.backgroundImage="url(car.png)";
 	car.style.left = x +'px';
+	console.log(x)
 	}
 
 if (event.key=="ArrowUp")
