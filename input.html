@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	html {
+		background-color: #ffdbee;
+
+	}
+
+	p {
+        font-size:25px;
+        color:saddlebrown;
+    }
+
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap" rel="stylesheet">
+
+</head>
+<body>
+ <p>What do you want for lunch?</p>
+
+Should you have this food for lunch?
+<input id="enter">
+</input>
+<button id="button"> 
+Submit
+</button>
+<div id="answer"></div>
+<script type="text/javascript">
+	button.addEventListener("click", function(){
+		console.log(enter.value)
+		if(enter.value == "Inaya"){
+			answer.innerText = "You are 100% correct"
+	}
+	else{
+		answer.innerText = "Yeah, I guess. There's a " + Math.floor(Math.random()*100) + " percent chance you should eat this."
+	}
+})
+</script>
+
+</body>
+</html>

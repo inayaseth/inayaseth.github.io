@@ -1,0 +1,116 @@
+<html><head>
+    <title></title>
+    <style type="text/css">
+    html {
+        background-color: #ffdbee;
+    }
+
+    .heart {
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        display: inline-block;
+        font-family: 'Indie Flower', cursive;
+        text-align: center;
+        font-size: 16px;
+        margin: 20px;
+        position: relative;
+        display: inline-block;
+        margin-left: 30px;
+        transition: 1s;
+    }
+
+    .pic {
+        background-image: url("heart.png");
+
+
+    }
+
+    h1 {
+        font-family: 'Indie Flower', cursive;
+        position: relative;
+        font-size:25px;
+    }
+
+    h2 {
+        position: fixed;
+        font-family: 'Indie Flower', cursive;
+        bottom: 0;
+        right: 50px;
+        font-size:25px;
+    }
+
+    h3 {
+        position: fixed;
+        font-family: 'Indie Flower', cursive;
+        bottom: 30;
+        right: 50px;
+        font-size:25px;
+    }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>I love you because...</h1>
+    <h2>Love, Inaya</h2>
+    <h3>To: Alexa</h3>
+    <script type="text/javascript">
+    function makeHeart(i) {
+
+
+        var heart = document.createElement("heart");
+
+        document.body.appendChild(heart);
+        heart.classList.add("heart");
+        heart.classList.add("pic");
+        document.body.appendChild(heart);
+
+        heart.addEventListener("click", function() {
+            function remove() {
+                heart.classList.remove("pic");
+                heart.innerHTML = array[i];
+            };
+
+            function add() {
+                heart.classList.add("pic");
+                heart.innerHTML = "";
+            }
+            remove();
+            setTimeout(add, 2000)
+            console.log(event);
+        });
+
+
+        function move() {
+            heart.style.left = Math.round(Math.random() * 70) + "px";
+            heart.style.top = Math.round(Math.random() * 60) - 30 + "px";
+
+        };
+
+        setTimeout(move, 1);
+        setInterval(move, 1000);
+
+
+    };
+
+    var array = ["you always make me laugh",
+        "i can always count on you to listen to my crazy stories or theories and pretend to be interested",
+        "you always know what im thinking",
+        "you know i love you more than grey crewnecks",
+        "you always push me to be my best",
+        "on the rare occassion that i ask, you would never turn down a run with me",
+        "you are beautiful inside and out", "our nightime talks (and facetimes) are the best", "you're so much fun", "you'll always watch (sometimes weird) movies with me!!", "you  keep me company anytime", "you always know how to make me smile😁", "you never stay mad at me for more than a minute", "you are so kind", "you are always up for anything", "you are always ready for an adventure", "you are the coolest", "YOU ARE AMAZING", "you help me finish my work (sometimes)", "you are so nice (most of the time)", "you are the best friend ever."
+    ];
+
+    for (var i = 0; i <= array.length - 1; i++) {
+        makeHeart(i);
+    }
+    </script><heart class="heart pic" style="left: 52px; top: -13px;"></heart><heart class="heart pic" style="left: 58px; top: 20px;"></heart><heart class="heart pic" style="left: 29px; top: 20px;"></heart><heart class="heart pic" style="left: 0px; top: -24px;"></heart><heart class="heart pic" style="left: 69px; top: -9px;"></heart><heart class="heart pic" style="left: 23px; top: -1px;"></heart><heart class="heart pic" style="left: 68px; top: 2px;"></heart><heart class="heart pic" style="left: 21px; top: -18px;"></heart><heart class="heart pic" style="left: 34px; top: -6px;"></heart><heart class="heart pic" style="left: 13px; top: -10px;"></heart><heart class="heart pic" style="left: 24px; top: 29px;"></heart><heart class="heart pic" style="left: 36px; top: 7px;"></heart><heart class="heart pic" style="left: 41px; top: -8px;"></heart><heart class="heart pic" style="left: 8px; top: 0px;"></heart><heart class="heart pic" style="left: 45px; top: -28px;"></heart><heart class="heart pic" style="left: 44px; top: 10px;"></heart><heart class="heart pic" style="left: 53px; top: -24px;"></heart><heart class="heart pic" style="left: 34px; top: 14px;"></heart><heart class="heart pic" style="left: 64px; top: -2px;"></heart><heart class="heart pic" style="left: 42px; top: -2px;"></heart><heart class="heart pic" style="left: 37px; top: 26px;"></heart>
+
+
+</body></html>
