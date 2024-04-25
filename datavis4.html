@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style type="text/css">
+
+    html{background-color:#fdcdcb;}
+
+        .people{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            display:inline-block;
+
+        }
+        .females{
+            background-color:lightcoral;
+
+
+        }
+
+        .males{
+            background-color:lightseagreen;
+
+            
+        }
+
+        .container{
+            width:49%;
+            display:inline-block;
+            border:3px solid black;
+
+        }
+
+    h1 {
+        font-family: 'Indie Flower', cursive;
+        position: relative;
+        font-size:28px;
+        color:#239c7f;
+    }
+     h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size:25px;
+        color:#1cc29e;
+    }
+
+    h3 {
+        position: absolute;
+        font-family: 'Indie Flower', cursive;
+        bottom: 0;
+        right:35px;
+        color:#239c7f;
+        font-size:18px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap" rel="stylesheet">
+
+    <h1><center>The total number of circles on the screen show the 120 million girls who are out of school. The seafoam circles show the 52 million of them who are living in non-fragile, conflict, and violent (non-FCV) countries and the coral circles show the 68 million girls who are living in FCV countries.</center></h1>
+
+    <h2><center>Out of over 120 million girls who are out of school, over 50% of these (68 million) are in FCV countries. Girls in crisis-affected countries will receive on average only 8.5 years of education in their lifetime.</center></h2>
+
+    <h3>Source: World Bank Blogs: Girls’ education in conflict is most at risk: Here’s how to reach them, 2024</h3>
+
+    <br>
+
+    <div id="container1" class="container"></div>
+
+    <div id="container2" class="container"></div>
+
+    <script type="text/javascript">
+        
+        function makeNon (){
+            var male = document.createElement("div")
+            container1.appendChild(male)
+            male.classList.add("males")
+            male.classList.add("people")
+        }
+
+        for(var counter = 1; counter<53; counter=counter+1){
+            makeNon()
+        }
+
+            function makeFCV (){
+            var female = document.createElement("div")
+            container2.appendChild(female)
+            female.classList.add("females")
+            female.classList.add("people")
+        }
+
+        for(var counter = 1; counter<69; counter=counter+1){
+            makeFCV()
+        }
+    </script>
+
+</body>
+</html>

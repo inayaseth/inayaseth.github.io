@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <style type="text/css">
+
+    html{background-color:#CBC3E3;}
+
+        .people{
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            display:inline-block;
+
+        }
+        .females{
+            background-color:mediumpurple;
+
+
+        }
+
+        .males{
+            background-color:palegreen;
+
+            
+        }
+
+        .container{
+            width:49%;
+            display:inline-block;
+            border:3px solid black;
+        }
+
+    h1 {
+        font-family: 'Indie Flower', cursive;
+        position: relative;
+        font-size:27px;
+        color:darkgreen;
+    }
+     h2 {
+        font-family: 'Indie Flower', cursive;
+        font-size:25px;
+        color:darkolivegreen;
+    }
+
+    h3 {
+        position: absolute;
+        font-family: 'Indie Flower', cursive;
+        bottom: 0;
+        right:35px;
+        color:darkgreen;
+        font-size:18px;
+    }
+    </style>
+</head>
+<body>
+
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&amp;display=swap" rel="stylesheet">
+
+    <h1><center>The circles show the approximate total size of our Dalton class. If we went to SECONDARY school in a country affected by fragility, conflict, and violence (FCV), then this would be how many males and females there would be in our class, respectively.</center></h1>
+
+    <h2><center>Girls in conflict and crisis-affected settings are much more likely to be out of school than girls who aren't in these contexts. At the secondary school level in FCV) settings, girls are 90% more likely to be out of school.</center></h2>
+
+    <h3>Source: World Bank Blogs: Girls’ education in conflict is most at risk: Here’s how to reach them, 2024</h3>
+
+    <br>
+
+    <div id="container1" class="container"></div>
+
+    <div id="container2" class="container"></div>
+
+    <script type="text/javascript">
+        
+        function makeNon (){
+            var male = document.createElement("div")
+            container1.appendChild(male)
+            male.classList.add("males")
+            male.classList.add("people")
+        }
+
+        for(var counter = 1; counter<100; counter=counter+1){
+            makeNon()
+        }
+
+            function makeFCV (){
+            var female = document.createElement("div")
+            container2.appendChild(female)
+            female.classList.add("females")
+            female.classList.add("people")
+        }
+
+        for(var counter = 1; counter<12; counter=counter+1){
+            makeFCV()
+        }
+    </script>
+
+</body>
+</html>
